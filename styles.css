@@ -30,6 +30,15 @@ body {
     color: var(--text-light);
     text-align: center;
     padding: 4rem 0;
+    position: relative;
+}
+
+.logo {
+    width: 190px;
+    height: auto;
+    margin-bottom: 0.1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
