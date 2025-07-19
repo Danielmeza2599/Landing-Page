@@ -55,6 +55,24 @@ body {
     gap: 0.5rem;
 }
 
+/* About me section - Increased font size */
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+#about a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
 /* Botones */
 .btn {
     display: inline-block;
@@ -175,5 +193,10 @@ footer {
     
     .subtitle {
         font-size: 1.2rem;
+    }
+    
+    #about p {
+        font-size: 1.1rem;
+        line-height: 1.7;
     }
 }
