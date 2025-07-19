@@ -101,9 +101,9 @@ body {
 /* Habilidades blandas */
 .soft-skills {
     /*display: grid;*/
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    text-align: justify;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     background: var(--light-color);
     padding: 0.5rem;
