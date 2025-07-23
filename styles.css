@@ -194,6 +194,11 @@ footer {
     text-decoration: none;
 }
 
+.email {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
