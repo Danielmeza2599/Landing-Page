@@ -223,4 +223,8 @@ footer {
         font-size: 1.1rem;
         line-height: 1.7;
     }
+    
+    .logo {
+        width: 280px;
+    }
 }
