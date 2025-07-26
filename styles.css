@@ -99,6 +99,16 @@ body {
     transform: translateY(-3px);
 }
 
+.btn-download {
+    background: var(--secondary-color);
+    border: 2px solid var(--text-light);
+}
+
+.btn-download:hover {
+    background: #2980b9;
+    border-color: var(--text-light);
+}
+
 /* Secciones */
 .section {
     padding: 3rem 0;
