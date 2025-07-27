@@ -26,7 +26,8 @@ body {
 
 /* Header */
 .hero {
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
+    background: linear-gradient(15deg, var(--primary-color), var(--secondary-color));
     color: var(--text-color);
     padding: 3rem 0 2rem 0;
     position: relative;
@@ -38,19 +39,19 @@ body {
 .hero::after {
     content: '';
     position: absolute;
-    bottom: -50px;
+    bottom: -70px;
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);*/
     z-index: 1;
 }
 
 .logo {
-    width: 120px;
-    height: auto;
-    margin-right: 2rem;
+    width: 200px;
+    height: 200px;
+    margin-right: 0.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -277,28 +278,29 @@ footer {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 40px;
-  width: 100vw;
-  max-width: 100vw;
-  box-sizing: border-box;
-  padding: 40px 0;
+  gap: 0.5px;
+  width: 300vw;
+  max-width: 300vw;
+  box-sizing: content-box;
+  padding: 10px 50px 20px;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 320px;
-  max-width: 400px;
+  min-width: 420px;
+  max-width: 450px;
   width: 90vw; /* Ajusta este valor si quieres más o menos espacio para el logo */
+  padding: 10px 50px 20px;
 }
 
 .logo {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  /*box-shadow: 0 2px 8px rgba(0,0,0,0.08);*/
   padding: 12px;
 }
 
