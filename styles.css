@@ -27,7 +27,7 @@ body {
 /* Header */
 .hero {
     /*background: #f5f5f5;*/
-    background: linear-gradient(15deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(5deg, var(--primary-color), var(--secondary-color));
     color: var(--text-color);
     padding: 3rem 0 2rem 0;
     position: relative;
@@ -257,26 +257,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    
-    .subtitle {
-        font-size: 1.2rem;
-    }
-    
-    #about p {
-        font-size: 1.1rem;
-        line-height: 1.7;
-    }
-    
-    .logo {
-        width: 250px;
-    }
-}
-
 .hero-flex {
   display: flex;
   align-items: stretch;
@@ -357,4 +337,376 @@ footer {
 
 main.container {
   margin-top: 3rem; /* Ajusta el valor según lo que necesites */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets (768px y menores) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .hero {
+        padding: 2rem 0 4rem 0;
+    }
+    
+    .hero-flex {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+    
+    .logo-container {
+        min-width: auto;
+        max-width: 300px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    .professional-info {
+        min-width: auto;
+        padding: 20px 25px;
+        width: 100%;
+    }
+    
+    .professional-info .full-name {
+        font-size: 1.4em;
+    }
+    
+    .professional-info .subtitle {
+        font-size: 1em;
+    }
+    
+    .professional-info .contact-info p {
+        font-size: 0.9rem;
+        margin: 4px 0;
+    }
+    
+    .professional-info .social-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .professional-info .social-links .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .section {
+        padding: 2rem 0;
+    }
+    
+    .section h2 {
+        font-size: 1.8rem;
+    }
+    
+    #about p {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0.5em;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skill-category {
+        padding: 1.2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-form {
+        max-width: 100%;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.7rem;
+    }
+    
+    .contact-form textarea {
+        height: 120px;
+    }
+    
+    footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-links a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Celulares pequeños (480px y menores) */
+@media (max-width: 480px) {
+    .container {
+        width: 98%;
+        padding: 0 5px;
+    }
+    
+    .hero {
+        padding: 1.5rem 0 3rem 0;
+    }
+    
+    .hero-flex {
+        padding: 5px 10px;
+    }
+    
+    .logo-container {
+        max-width: 250px;
+        padding: 5px 10px;
+    }
+    
+    .professional-info {
+        padding: 15px 20px;
+    }
+    
+    .professional-info .full-name {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+    }
+    
+    .professional-info .subtitle {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+    
+    .professional-info .contact-info p {
+        font-size: 0.8rem;
+        margin: 3px 0;
+    }
+    
+    .professional-info .social-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .professional-info .social-links .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    
+    .section {
+        padding: 1.5rem 0;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #about p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 0.3em;
+    }
+    
+    .skill-category {
+        padding: 1rem;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.1rem;
+    }
+    
+    .skill-category ul {
+        padding-left: 1.2rem;
+    }
+    
+    .skill-category li {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .project-card {
+        padding: 1rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .project-card p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-form textarea {
+        height: 100px;
+    }
+    
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    footer {
+        padding: 1rem 0;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Celulares muy pequeños (320px y menores) */
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 0 2px;
+    }
+    
+    .hero-flex {
+        padding: 2px 5px;
+    }
+    
+    .logo-container {
+        max-width: 200px;
+        padding: 2px 5px;
+    }
+    
+    .professional-info {
+        padding: 10px 15px;
+    }
+    
+    .professional-info .full-name {
+        font-size: 1.1em;
+    }
+    
+    .professional-info .subtitle {
+        font-size: 0.8em;
+    }
+    
+    .professional-info .contact-info p {
+        font-size: 0.75rem;
+    }
+    
+    .professional-info .social-links .btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .section h2 {
+        font-size: 1.3rem;
+    }
+    
+    #about p {
+        font-size: 0.85rem;
+    }
+    
+    .skill-category {
+        padding: 0.8rem;
+    }
+    
+    .skill-category h3 {
+        font-size: 1rem;
+    }
+    
+    .skill-category li {
+        font-size: 0.85rem;
+    }
+    
+    .project-card {
+        padding: 0.8rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1rem;
+    }
+    
+    .project-card p {
+        font-size: 0.85rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Orientación landscape en celulares */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 1rem 0 2rem 0;
+    }
+    
+    .hero-flex {
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .logo-container {
+        max-width: 200px;
+    }
+    
+    .professional-info {
+        padding: 15px 20px;
+    }
+    
+    .professional-info .full-name {
+        font-size: 1.2em;
+    }
+    
+    .professional-info .subtitle {
+        font-size: 0.9em;
+    }
+    
+    .professional-info .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablets en orientación portrait */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero-flex {
+        flex-direction: column;
+    }
+    
+    .logo-container {
+        max-width: 350px;
+    }
+    
+    .professional-info {
+        padding: 25px 30px;
+    }
+    
+    .professional-info .full-name {
+        font-size: 1.5em;
+    }
+    
+    .professional-info .subtitle {
+        font-size: 1em;
+    }
+    
+    .professional-info .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
