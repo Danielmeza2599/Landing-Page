@@ -19,7 +19,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -34,9 +34,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 8rem; /* Puedes ajustar el valor según lo que necesites */
 }
 
-.hero::after {
+/* .hero::after {
     content: '';
     position: absolute;
     bottom: -70px;
@@ -44,9 +45,9 @@ body {
     width: 100%;
     height: 100px;
     background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
-    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);*/
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     z-index: 1;
-}
+} */
 
 .logo {
     width: 200px;
@@ -104,7 +105,9 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
     text-align: justify;
+    padding: 1em;
 }
 
 #about a {
@@ -350,4 +353,8 @@ footer {
   gap: 16px;
   justify-content: center;
   margin-top: 18px;
+}
+
+main.container {
+  margin-top: 3rem; /* Ajusta el valor según lo que necesites */
 }
